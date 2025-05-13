@@ -1,3 +1,4 @@
+# ASSIGNMENT 1
 class vehicle:
   def __init__(self, color, model):
     self.color= color #instance variable
@@ -21,3 +22,26 @@ my_vehicle.description()
 
 my_electric= Electricvehicle("Blue", "Tesla", 70)
 my_electric.description()
+
+#ACTIVITY 2
+class Vehicle:
+    def move(self):
+        print("This vehicle moves.")
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving ")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing ")
+
+# Example usage
+vehicles = [Car(), Plane(), Boat()]
+
+for vehicle in vehicles:
+    vehicle.move()  # Each object calls its own version of move()
